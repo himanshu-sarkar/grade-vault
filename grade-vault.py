@@ -105,7 +105,7 @@ for student in students:
     if student["average"] > topper["average"]:
         topper = student
 
-print(f"\n🏆 Class Topper : {topper['name']}")
+print(f"\n Class Topper : {topper['name']}")
 print(f"   Average Score : {topper['average']:.2f}%")
 print(f"   Grade         : {topper['grade']}")
 
