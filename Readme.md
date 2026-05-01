@@ -139,20 +139,6 @@ No libraries needed. Just vanilla Python.
 
 ---
 
-## What's next
 
-Planning to add:
-- Input validation using `while` loops so the program doesn't crash on bad input
-- File saving so reports don't disappear after the program closes
-- Maybe a basic menu system
-
----
-
-## Tech stack
-
-- Python 3
-- No external libraries
-
----
 
 *Second project. First was a basic calculator. Trying to actually build things instead of just doing tutorials.*
