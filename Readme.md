@@ -139,6 +139,3 @@ No libraries needed. Just vanilla Python.
 
 ---
 
-
-
-*Second project. First was a basic calculator. Trying to actually build things instead of just doing tutorials.*
