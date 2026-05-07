@@ -1,4 +1,3 @@
-# ----------------------------------------
 # Grade Vault - Student Report Generator
 # A simple python project to track student grades
 # ----------------------------------------
@@ -123,7 +122,7 @@ for student in students:
 class_average = total_class_marks / len(students)
 print(f"Class Average : {class_average:.2f}%")
 
-# counting how many passed and failed
+# counting how many students passed and failed
 passed = 0
 failed = 0
 
