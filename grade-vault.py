@@ -96,8 +96,8 @@ for student in students:
 # FINDING THE TOPPER
 # ----------------------------------------
 
-# starting with the first student as topper
-# then looping through to check if anyone has higher average
+# starting with the first student as the topper
+# then looping through to check if anyone has a higher average
 topper = students[0]
 
 for student in students:
