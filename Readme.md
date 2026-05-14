@@ -1,8 +1,8 @@
 # Grade Vault 
 
-A simple terminal-based Python program that collects student marks, calculates averages, assigns letter grades, finds the class topper, and prints a clean report — all without using any libraries.
+A simple terminal-based Python program that collects student marks, calculates averages, assigns letter grades, finds the class topper, and prints a clean report card.
 
-Built as my **second Python project** to practice loops in real use cases.
+Built as my **second Python project** to practice loops, nested loops, lists, dictionaries, and report generation logic in a practical way.
 
 ---
 
@@ -11,9 +11,13 @@ Built as my **second Python project** to practice loops in real use cases.
 - Takes input for multiple students and their subjects
 - Calculates total marks and percentage for each student using loops
 - Assigns a letter grade (A+ to F) based on average
-- Prints a full report card for every student
+- Generates performance remarks based on scores
+- Prints a detailed report card for every student
 - Finds the class topper by comparing averages
-- Shows class-level stats: overall average, pass count, fail count
+- Shows class-level stats:
+  - overall class average
+  - pass count
+  - fail count
 
 ---
 
@@ -22,19 +26,34 @@ Built as my **second Python project** to practice loops in real use cases.
 | Loop | Where |
 |------|-------|
 | `for` loop | Iterating over each student |
-| Nested `for` loop | Collecting marks per subject |
+| Nested `for` loop | Collecting subject names and marks |
 | `for` loop | Manually calculating total marks |
-| `for` loop | Printing subject-wise breakdown |
-| `for` loop | Finding the topper |
-| `for` loop | Calculating class average and pass/fail count |
+| `for` loop | Printing subject-wise marks |
+| `for` loop | Finding the class topper |
+| `for` loop | Calculating class average |
+| `for` loop | Counting passed and failed students |
 
-The total marks calculation was done with a loop on purpose instead of using `sum()` — just to actually practice the concept.
+The total marks calculation was intentionally done using loops instead of `sum()` to practice loop logic properly.
+
+---
+
+## Features Included
+
+- Multiple student support
+- Multiple subject support
+- Average percentage calculation
+- Grade assignment
+- Performance remarks
+- Subject-wise report display
+- Class topper detection
+- Class summary statistics
+- Clean terminal formatting
 
 ---
 
 ## Sample Output
 
-```
+```text
 =============================================
         GRADE VAULT
    Student Report Generator
@@ -70,6 +89,7 @@ How many subjects does Aisha have? 3
 
 Name    : Rohan
 Grade   : B
+Remark  : Very good work!
 Average : 75.00%
 Total   : 225 / 300
 Subjects:
@@ -80,6 +100,7 @@ Subjects:
 
 Name    : Aisha
 Grade   : A+
+Remark  : Outstanding performance!
 Average : 91.00%
 Total   : 273 / 300
 Subjects:
@@ -104,15 +125,17 @@ Failed        : 0 student(s)
 
 ---
 
-## How to run
+## How to Run
 
-Make sure you have Python 3 installed. Then:
+Make sure Python 3 is installed.
+
+Run the project using:
 
 ```bash
 python grade_vault.py
 ```
 
-No libraries needed. Just vanilla Python.
+No external libraries required.
 
 ---
 
@@ -121,21 +144,22 @@ No libraries needed. Just vanilla Python.
 | Average | Grade |
 |---------|-------|
 | 90 - 100 | A+ |
-| 80 - 89  | A  |
-| 70 - 79  | B  |
-| 60 - 69  | C  |
-| 50 - 59  | D  |
-| Below 50 | F  |
+| 80 - 89  | A |
+| 70 - 79  | B |
+| 60 - 69  | C |
+| 50 - 59  | D |
+| Below 50 | F |
 
 ---
 
-## What I learned
+## What I Learned
 
-- How `for` loops work with `range()` and with lists directly
-- Nested loops for collecting multi-dimensional data
-- Using a list of dictionaries to store structured data
-- Manually building up logic that built-in functions could do — so the concept actually sticks
-- Formatting output with f-strings and `.2f` for decimals
+- Using `for` loops with `range()`
+- Nested loops for structured input collection
+- Working with lists and dictionaries together
+- Building manual logic instead of relying on built-in shortcuts
+- Formatting clean terminal output using f-strings
+- Organizing data using dictionaries inside lists
+- Basic report generation logic in Python
 
 ---
-
