@@ -54,6 +54,18 @@ for i in range(num_students):
     else:
         grade = "F"
 
+    # small performance remark based on average
+    if average >= 90:
+        remark = "Outstanding performance!"
+    elif average >= 75:
+        remark = "Very good work!"
+    elif average >= 60:
+        remark = "Good effort!"
+    elif average >= 50:
+        remark = "Needs a little improvement."
+    else:
+        remark = "Needs serious improvement."
+
     # storing everything in a dictionary and adding to the list
     student_data = {
         "name": name,
@@ -61,7 +73,8 @@ for i in range(num_students):
         "marks": marks,
         "total": total,
         "average": average,
-        "grade": grade
+        "grade": grade,
+        "remark": remark
     }
 
     students.append(student_data)
@@ -80,6 +93,7 @@ print("=" * 45)
 for student in students:
     print(f"\nName    : {student['name']}")
     print(f"Grade   : {student['grade']}")
+    print(f"Remark  : {student['remark']}")
     print(f"Average : {student['average']:.2f}%")
     print(f"Total   : {student['total']:.0f} / {len(student['marks']) * 100}")
 
